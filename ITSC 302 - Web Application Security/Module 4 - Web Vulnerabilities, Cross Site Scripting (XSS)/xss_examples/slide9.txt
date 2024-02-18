@@ -1,0 +1,4 @@
+In IE:
+
+
+res://C:%5Cwindows%5Csystem32%5Cmsxml3.dll/XML/DEFAULTSS.XSL

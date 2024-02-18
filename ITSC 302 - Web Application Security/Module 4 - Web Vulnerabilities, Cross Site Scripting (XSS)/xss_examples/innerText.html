@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<script type="text/javascript">
+function showInDivs()
+{
+	var html=document.getElementById("theHTML").value;
+
+	document.getElementById("one").innerHTML=html;
+
+	//IE allows use of .innerText property, Firefox uses .textContent instead.
+	document.getElementById("two").textContent=html;
+}
+</script>
+</head>
+
+<body>
+
+<!--Try entering some HTML markup in the value and see how the browser renders both divs with it-->
+
+Enter some HTML:
+<input type="text" id="theHTML"> <input type="button" value="Show in divs" onclick="showInDivs()">
+<br/><br/>
+Div 1:<br/>
+<div id="one"></div>
+
+Div 2:<br/>
+<div id="two"></div>
+
+</body>
+</html>
