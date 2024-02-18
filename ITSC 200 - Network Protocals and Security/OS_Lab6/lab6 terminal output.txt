@@ -1,0 +1,181 @@
+cole@cole-VirtualBox:~$ cat cole.txt
+Apache2 runing daemons:
+           │   │ │     ├─19744 grep apache
+             ├─apache2.service 
+             │ ├─757 /usr/sbin/apache2 -k start
+             │ ├─758 /usr/sbin/apache2 -k start
+             │ └─759 /usr/sbin/apache2 -k start
+All users on system: 
+root
+cole
+user1
+user2
+All ports listening on the NIC address: 
+tcp6       0      0 :::80                   :::*                    LISTEN     
+tcp6       0      0 ::1:631                 :::*                    LISTEN     
+IP address:
+10.0.2.15 
+Current running process ID: 
+489
+1109
+1110
+1118
+1121
+1124
+1125
+1148
+1150
+1158
+1160
+1164
+1165
+1172
+1174
+1257
+1269
+1274
+1275
+1286
+1289
+1301
+1302
+1304
+1306
+1310
+1312
+1318
+1327
+1329
+1330
+1333
+1339
+1342
+1349
+1350
+1354
+1356
+1359
+1360
+1362
+1376
+1416
+1421
+1426
+1427
+1431
+1436
+1446
+1448
+1457
+1469
+1478
+1485
+1486
+1494
+1496
+1521
+1526
+1547
+1579
+1590
+1610
+1639
+1651
+1669
+1688
+1696
+1703
+1716
+1738
+1744
+1747
+2934
+2948
+
+
+
+
+
+
+Executable of current running processess: 
+avahi-daemon: running [cole-VirtualBox.local]
+/lib/systemd/systemd --user
+(sd-pam)
+/usr/bin/pulseaudio --daemonize=no --log-target=journal
+/usr/bin/gnome-keyring-daemon --daemonize --login
+cinnamon-session --session cinnamon
+/usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+/usr/bin/VBoxClient --clipboard
+/usr/bin/VBoxClient --clipboard
+/usr/bin/VBoxClient --seamless
+/usr/bin/VBoxClient --seamless
+/usr/bin/VBoxClient --draganddrop
+/usr/bin/VBoxClient --draganddrop
+/usr/bin/VBoxClient --vmsvga
+/usr/bin/VBoxClient --vmsvga
+/usr/bin/ssh-agent /usr/bin/im-launch cinnamon-session-cinnamon
+/usr/libexec/gvfsd
+/usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+/usr/libexec/at-spi-bus-launcher
+/usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+/usr/libexec/at-spi2-registryd --use-gnome-session
+csd-power
+csd-clipboard
+csd-sound
+csd-wacom
+csd-color
+csd-cursor
+csd-xrandr
+csd-print-notifications
+csd-orientation
+csd-a11y-keyboard
+csd-xsettings
+csd-media-keys
+csd-a11y-settings
+csd-automount
+/usr/libexec/dconf-service
+csd-keyboard
+csd-background
+csd-screensaver-proxy
+csd-housekeeping
+csd-mouse
+/usr/libexec/csd-printer
+/usr/libexec/gvfs-udisks2-volume-monitor
+/usr/libexec/gvfs-mtp-volume-monitor
+cinnamon-launcher
+/usr/libexec/gvfs-goa-volume-monitor
+/usr/libexec/goa-daemon
+cinnamon --replace
+/usr/libexec/goa-identity-service
+/usr/libexec/gvfs-gphoto2-volume-monitor
+/usr/libexec/gvfs-afc-volume-monitor
+/usr/libexec/xapps/sn-watcher/xapp-sn-watcher
+/usr/libexec/geoclue-2.0/demos/agent
+nemo-desktop
+blueberry-obex-agent
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
+nm-applet
+cinnamon-killer-daemon
+/usr/libexec/evolution-data-server/evolution-alarm-notify
+/usr/lib/bluetooth/obexd
+/usr/libexec/evolution-source-registry
+/usr/libexec/evolution-calendar-factory
+/usr/libexec/evolution-addressbook-factory
+/usr/libexec/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+cinnamon-screensaver
+/usr/libexec/gvfsd-metadata
+/usr/libexec/gnome-terminal-server
+bash
+nemo
+mintUpdate
+xed /home/cole/inst.sh
+/usr/bin/python3 /usr/share/system-config-printer/applet.py
+mintreport-tray
+/usr/libexec/gvfsd-network --spawner :1.7 /org/gtk/gvfs/exec_spaw/1
+/usr/libexec/gvfsd-dnssd --spawner :1.7 /org/gtk/gvfs/exec_spaw/3
+su cole
+bash
+bash lab6.sh
+ps aux
+grep cole
+cut -b 68-
