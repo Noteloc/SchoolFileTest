@@ -1,0 +1,9 @@
+192.168.10.1  255.255.255.0
+
+Broadcast address 192.168.10.255  last octet in binary
+is 11111111 = 255
+
+Network address 192.168.10.0  last octet in binary is
+   00000000 = 0
+
+192.168.10.3 = 192.168.10.00000011
