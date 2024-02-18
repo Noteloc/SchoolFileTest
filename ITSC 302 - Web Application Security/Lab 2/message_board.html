@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Message Board</title>
+	<style>body{margin:0}header{padding:20px;background-color:#333;color:#fff;text-align:center}h1{margin:0}.container{display:block;width:80%;margin:0 auto}.container>div{display:inline-block;vertical-align:top;padding:20px 0}#message_form{width:39%}#message_form label{display:block;margin:10px 0 5px}#message_form button{display:block}#message_display{width:60%;margin-top:20px}#error_message{display:block;color:#952626}.hide{display:none;visibility:hidden}.message{display:block;margin:0 0 5px 0}.message .m_name{display:inline-block;vertical-align:top;width:100px;font-weight:bolder}.message .m_content{display:inline-block;vertical-align:top;width:auto}</style>
+</head>
+
+<body>
+	<!-- header -->
+	<header>
+		<h1>Simple Message Board</h1>
+	</header>
+
+	<div class="container">
+
+		<!-- Inputs for saving a message -->
+		<div id="message_form">
+			<label for="username">Name:</label>
+			<input id="username" type="text" name="username" value="">
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" cols="45" rows="5"></textarea>
+			<button onclick="javascript:postMessage();">Post Message</button>
+			<span id="error_message" class="hide">Please enter both a name and message.</span>
+		</div>
+
+
+		<!-- Stored messages will be displayed in this div -->
+		<div id="message_display"></div>
+
+	</div>
+
+
+	<!-- JavaScript used for message system -->
+	<script type="text/javascript">var messages=[];function postMessage(){var s=document.getElementById("username"),e=document.getElementById("message");if(null!=s.value&&""!=s.value&&null!=e.value&&""!=e.value){var a={name:s.value,content:e.value};return messages.push(a),s.value="",e.value="",messageError(!1),void displayMessages()}messageError(!0)}function displayMessages(){msgDisplay="",messages.forEach(s=>{msgDisplay+='<div class="message">',msgDisplay+='<span class="m_name">'+s.name+":</span>",msgDisplay+='<span class="m_content">'+s.content+"</span>",msgDisplay+="</div>"}),document.getElementById("message_display").innerHTML=msgDisplay}function messageError(s){var e=document.getElementById("error_message");s?e.classList.remove("hide"):e.classList.add("hide")}document.onload=displayMessages();</script>
+</body>
+
+</html>

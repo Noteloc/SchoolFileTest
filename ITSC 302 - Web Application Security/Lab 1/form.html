@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 Part 2</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;    
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lab One Form Page</h1>
+    </header>
+    <main>
+        <h2>Form</h2>
+        <form action = "https://sait-demo.000webhostapp.com/results.php?getvalue=heythisworks" method="post">
+            <div>
+                <label for="uname">Full name:</label>
+                <input id="uname" type="text" name="user_name" value="" required>
+            </div>
+            <div>
+                <label for="unumber">Phone Number:</label>
+                <input id="unumber" type="number" name="user_number" value="" required>
+            </div>
+            <div>
+                <label for="uemail">Email Address:</label>
+                <input id="uemail" type="email" name="user_email" value="" required>
+            </div>
+            <div>
+                <label for="upass">Password:</label>
+                <input id="upass" type="password" name="user_password" value="" required>
+            </div>
+            <div>
+                <label>Subscribe to our newsletter</label>
+                <br>
+                <label for="yesnews">Yes</label>
+                <input id="yesnews" type="radio" name="user_newsletter" value="Yes" required>
+                <br>
+                <label for="nonews">No</label>
+                <input id="nonews" type="radio" name="user_newsletter" value="No" required>
+            </div>
+
+            <div style="margin-top:20pix;">
+                <input type="submit" value="Submit Contact Info">
+                <input type="reset" value="Reset Form">
+            </div>
+        </form>
+    </main>
+</body> 
+</html>

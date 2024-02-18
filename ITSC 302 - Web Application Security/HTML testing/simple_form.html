@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;    
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Simple Form page</h1>
+    </header>
+
+    <main>
+        <h2>Contact form</h2>
+
+        <form action="./simple_webpage.html" method="GET">
+            <div>
+                <label>Full Name:</label>
+                <input type="text" name="user_name" value="" required>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="user_email" value="" required>
+            </div>
+            <div>
+                <label>Phone Number:</label>
+                <input type="tel" name="user_phone" value="" maxlength="10" required>
+            </div>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="user_age" value="" min="1" max="100">
+            </div>
+            <div>
+                <label>Birthdate:</label>
+                <input type="date" name="user_birthdate" value="">
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" name="user_password" value="">
+            </div>
+            <div>
+                <label>Rating:</label>
+                <input type="range" name="user_rating" value="" min="1" max="5">
+            </div>
+
+            <div>
+                <h3>Contact Type</h3>
+
+                <input id="contact_personal" type="radio" name="contact_type" value="personal">
+                <label for="contact_personal">Personal</label>
+                <br>
+                <input id="contact_business" type="radio" name="contact_type" value="business">
+                <label for="contact_business">Business</label>
+
+            </div>
+
+            <div>
+                <h3>Availability</h3>
+
+                <input id="a_monday" type="checkbox" name="availability[]" value="monday">
+                <label for="a_monday">Monday</label>
+                <br>    
+                <input id="a_tuesday" type="checkbox" name="availability[]" value="tuesday">
+                <label for="a_tuesday">Tuesday</label>
+                <br>    
+                <input id="a_wednesday" type="checkbox" name="availability[]" value="wednesday">
+                <label for="a_wednesday">Wednesday</label>
+                <br>    
+                <input id="a_thursday" type="checkbox" name="availability[]" value="thursday">
+                <label for="a_thursday">Thursday</label>
+                <br>    
+                <input id="a_friday" type="checkbox" name="availability[]" value="friday">
+                <label for="a_friday">Friday</label>
+                <br>    
+            </div>
+
+            <div>
+                <h3>Comments</h3>
+                <textarea name="user_comments">Enter text here</textarea>
+            </div>
+
+            <div style="margin-top:20pix;">
+                <input type="submit" value="Submit Contact Info">
+                <input type="reset" value="Reset Form">
+            </div>
+        </form>
+
+    </main>
+
+</body>
+</html>
