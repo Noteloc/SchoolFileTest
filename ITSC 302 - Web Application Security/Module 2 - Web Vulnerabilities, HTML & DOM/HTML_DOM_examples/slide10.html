@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+<script src="fromOtherFile.js"></script>
+
+<script type="text/javascript">
+alert("Run on page load");
+
+function runFromPageEvent()
+{
+	alert("Run by page event (onload)");
+}
+
+function runFromControlEvent()
+{
+	alert("Run by control event (button click)");
+}
+</script>
+
+</head>
+
+<body onload="runFromPageEvent()">
+<h2>Running Javascript in a HTML Page</h2>
+<script type="text/javascript">
+runFromOtherFile();
+</script>
+
+<input type="button" value="Click to run" onclick="runFromControlEvent()"><br/>
+
+<a href="javascript: alert('Run from link event');">Run from hyperlink</a><br/>
+
+<img src="koala.jpg" onmouseover="javascript: alert('Run from smug koala');"></img>
+
+</body>
+
+</html>

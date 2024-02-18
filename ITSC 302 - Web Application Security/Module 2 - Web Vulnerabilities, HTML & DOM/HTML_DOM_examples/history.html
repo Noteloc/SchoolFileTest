@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+	<a href="http://www.sait.ca" id="sait">SAIT</a><br/>
+	<a href="http://www.canada.com" id="canada">Canada.com</a><br/>
+	<a href="http://www.calgaryherald.com" id="calgary">Calgary Herald</a><br/>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+	//Find out *unvisited* link color (No longer works, browsers lie!)
+	var temp = document.createElement("a");
+	temp.href="http://www.unvisited.abc";
+	document.body.appendChild(temp);
+	var unvisitedColor = temp.style.color;
+
+	temp.parentNode.removeChild(temp);
+
+	//Loop through array of links, show which ones have been visited
+	var links = document.getElementsByTagName("a");
+
+	for (var i=0; i<links.length; i++)
+	{
+		//Old attack, won't work any more.
+		//var linkColor = links[i].style.color;
+		//if (linkColor != unvisitedColor)
+		//	alert("VISITED: "  + links[i]);
+		
+		alert(window.getComputedStyle(links[i],null).getPropertyValue("color"));
+	}
+
+</script>
+
+
