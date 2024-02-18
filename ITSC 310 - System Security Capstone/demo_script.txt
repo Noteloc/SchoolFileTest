@@ -1,0 +1,133 @@
+1. Allow a few seconds for the Intro music to play. Small explainer of the main menu.
+
+	This is a good time to touch on players encountering bugs with the game since we are in early development.
+
+2. Create a New Game
+
+3. Introduction to the Game Window
+
+	"Here you can do an overview of the game."
+
+	"Welcome to the game window. You can see there are a number of different modules."
+
+4. Introduce Primary Tabs
+
+	"There are 5 primary navigation tabs. Monitor, Network, Email, News and Menu."
+
+	"The developed modules include Monitor, Email and News. Network and Menu are still undergoing development."
+
+	"The Monitor tab shows the player a generateed user interface for interacting with NPC machines."
+
+5. Switch to Network.
+
+	"The Network tab is intended to display what machine the player is currently connected to. This is still undergoing development. In the meantime, you can look at the top right of the screen under the 'Connected Host' module to see which machine IP address you are currently connected to."
+
+6. Switch to Email Tab
+
+	" The Email tab is where the player gets their missions from. This is where the primary storyline content is presented to the player.
+
+7. Click to open email & scroll to the bottom.
+
+	"The player obtains information from the email, when the mission objective is completed, the player responds to the email to complete the mission and get the next one"
+
+8. Switch to News Tab
+
+	"The News tab provides the player with events that are happening within the game world. This tab updates as the player plays the game."
+
+9. Switch to Menu tab.
+
+	"The Menu tab is where the player can save/load the game and adjust other game options."
+
+10. Switch back to Montior Tab.
+
+	"On the bottom left of the screen, we have a dynamic file system. This updates in real time as we navigate through the folders."
+
+	"On the right, we have the primary module for the game, the terminal. This is where the core functionality of the game takes place."
+
+	"We developed the terminal to model the UNIX operating system. If you've had experience with Linux, the commands will feel very familiar to you.
+
+11. Demonstrate cd. (cd boot, cd .. , cd home )
+
+	"We can cd into folders. 
+
+12. Create a file. (touch new_file.txt)
+
+	"We can also create files."
+
+13. Add content into a file. (echo "hello world, my name is cole!" > new_file.txt)
+
+	"We can add content into these files."
+
+14. Read the created file. (cat new_file.txt)
+
+	"We can also read files."
+
+15. Delete the file. (rm new_file.txt)
+
+	"When we're done with a file, we can delete it.
+
+16. Create a directory. (mkdir cole_folder, cd cole_folder)
+
+	"In addition to files, we can also create directories. You can see that the file system on the right updates as we create folders and files."
+
+16. Demonstrate clear command. (clear)
+
+	"If the terminal gets filled up with too many commands, you can clear it by typing clear or cls."
+
+17. Demonstrate the help menu. (help) and help <command>
+
+	"There are a lot more commands than these. If you access the help menu, you can see a complete list of implemented commands. We can move, copy, download and delete files and folders."
+
+LOOK THROUGH THE LOG FILES
+
+18. Go through Mission 1.
+
+	"Now that we have a rough overview of how the game mechanics work, we can show you how the game itself plays."
+
+	"If we head over the emails tab, we can read our first objective."
+
+	"Here we find out that we need to obtain the name of an individual that is cheating on their significant other."
+
+	"We're provided with the IP address and login credentials. Let's try this out."
+
+19. Demonstrate Machine Connection (connect Fiona-Home)
+
+	"One of the primary game mechanics is connecting to network nodes otherwise known as NPC machines."
+
+19. Login to Machine (Use the GUI).
+
+	"When you first connect to a node, you will need to either login or exploit it. In this case, we are already given the credentials from the email, so we'll login. This can be done on the terminal or on the GUI."
+
+20. Navigate through the folders.
+
+	"Once you're inside the machine, you can navigate through the file system to explore the contents."
+
+21. Review mission objective.
+
+	"We're looking for someone that is associated with the username, viper."
+
+22. Read home/school/venebalm_high_school_transcripts
+
+	"We can see that this person isn't doing well this semester."
+
+23. cd /home/emails, cat credit_union_international_statement
+
+	"We can see where they're spending their money."
+
+24. cat "going_official"
+
+	"Here it is. This is what we're looking for. Looks like the person we're looking for goes by the name of 'donny'."
+
+25. Reply to email.
+
+	"Now that we have the information we need, we can respond to the email with the name, to progress to the next mission."
+
+26. Explain game mechanic.
+
+	"The primary mechanic behind the game is machine exploration and exploitation. The player is given investigation missions through the email, and they perform the tasks by obtaining the specific information."
+
+27. Demo Wrap Up
+
+	"This is where the demo ends. We have created a total of 4 missions you can play. You will be able to play the demo at the end of the presentation. We hope you like what you see, and we're excited for you to experience what we've created."
+
+Rhean, Me, Rhean, Jack, Dart
